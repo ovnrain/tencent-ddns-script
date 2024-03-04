@@ -8,6 +8,10 @@
 
 注意：本脚本获取公网 IP 地址使用了 [ifconfig.io](https://ifconfig.io) 服务，如果使用了软路由等设备，请将 `ifconfig.io` 域名加入直连列表，否则获取到的 IP 可能是代理服务器的 IP 地址。你可以先在浏览器中访问 [ifconfig.io](https://ifconfig.io) 查看你的公网 IP 地址是否正确
 
+### 添加记录
+
+首先需要在 [DNSPod](https://console.dnspod.cn/dns/list) 控制台添加域名解析记录，如果已经添加过记录，可以跳过这一步
+
 ### 获取腾讯云 secretId 和 secretKey
 
 1. 登录腾讯云控制台，进入 [API 密钥管理](https://console.cloud.tencent.com/cam/capi) 页面
