@@ -6,7 +6,7 @@
 
 ## 使用
 
-注意：本脚本获取公网 IP 地址使用了 [ifconfig.io](https://ifconfig.io/ip) 服务，如果使用了软路由等设备，请将 `ifconfig.io` 域名加入直连列表，否则获取到的 IP 可能是代理服务器的 IP 地址
+注意：本脚本获取公网 IP 地址使用了 [ifconfig.io](https://ifconfig.io) 服务，如果使用了软路由等设备，请将 `ifconfig.io` 域名加入直连列表，否则获取到的 IP 可能是代理服务器的 IP 地址。你可以先在浏览器中访问 [ifconfig.io](https://ifconfig.io) 查看你的公网 IP 地址是否正确
 
 ### 获取腾讯云 secretId 和 secretKey
 
