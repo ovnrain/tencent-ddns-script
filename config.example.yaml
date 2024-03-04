@@ -1,0 +1,6 @@
+- domain: 'yourdomain.com'
+  subDomain: '@'
+  type: 'A'
+- domain: 'yourdomain.com'
+  subDomain: 'www'
+  type: 'A'
