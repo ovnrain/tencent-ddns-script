@@ -1,0 +1,14 @@
+.idea/
+node_modules/
+build/
+tmp/
+temp/
+*.sqlite
+*-debug.log
+*-error.log
+/.nyc_output
+/dist/
+/lib
+/tmp
+.env
+/config.yaml

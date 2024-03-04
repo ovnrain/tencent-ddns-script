@@ -1,0 +1,24 @@
+{
+  "name": "ddns-script",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "tsx -r dotenv/config ./src/ddns.ts",
+    "build": "tsc",
+    "start": "node -r dotenv/config dist/ddns.js"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.24",
+    "prettier": "^3.2.5",
+    "tsx": "^4.7.1",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "axios": "^1.6.7",
+    "dotenv": "^16.4.5",
+    "tencentcloud-sdk-nodejs": "^4.0.803",
+    "yaml": "^2.4.0",
+    "znv": "^0.4.0"
+  },
+  "type": "module"
+}
