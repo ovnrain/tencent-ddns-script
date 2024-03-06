@@ -56,25 +56,20 @@ try {
     const recordId = recordItem?.RecordId;
     const recordIP = recordItem?.Value;
 
+    const recordConfig = {
+      Domain: config.domain,
+      SubDomain: config.subDomain,
+      RecordType: config.type,
+      RecordLine: '默认',
+      Value: publicIP,
+    };
+
     if (!recordId) {
-      await client.CreateRecord({
-        Domain: config.domain,
-        SubDomain: config.subDomain,
-        RecordType: config.type,
-        RecordLine: '默认',
-        Value: publicIP,
-      });
+      await client.CreateRecord(recordConfig);
 
       console.log(`${fullDomain} 创建记录成功，最新的 IP 为 ${publicIP}`);
     } else if (recordIP !== publicIP) {
-      await client.ModifyRecord({
-        Domain: config.domain,
-        SubDomain: config.subDomain,
-        RecordId: recordId,
-        RecordType: config.type,
-        RecordLine: '默认',
-        Value: publicIP,
-      });
+      await client.ModifyRecord({ ...recordConfig, RecordId: recordId });
 
       console.log(`${fullDomain} 更新记录成功，最新的 IP 为 ${publicIP}`);
     } else {
