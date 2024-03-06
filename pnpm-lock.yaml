@@ -12,19 +12,19 @@ dependencies:
     specifier: ^16.4.5
     version: 16.4.5
   tencentcloud-sdk-nodejs:
-    specifier: ^4.0.803
-    version: 4.0.803
+    specifier: ^4.0.805
+    version: 4.0.805
   yaml:
-    specifier: ^2.4.0
-    version: 2.4.0
+    specifier: ^2.4.1
+    version: 2.4.1
   znv:
     specifier: ^0.4.0
     version: 0.4.0(zod@3.22.4)
 
 devDependencies:
   '@types/node':
-    specifier: ^20.11.24
-    version: 20.11.24
+    specifier: ^20.11.25
+    version: 20.11.25
   prettier:
     specifier: ^3.2.5
     version: 3.2.5
@@ -244,8 +244,8 @@ packages:
     dev: true
     optional: true
 
-  /@types/node@20.11.24:
-    resolution: {integrity: sha512-Kza43ewS3xoLgCEpQrsT+xRo/EJej1y0kVYGiLFE1NEODXGzTfwiC6tXTLMQskn1X4/Rjlh0MQUvx9W+L9long==}
+  /@types/node@20.11.25:
+    resolution: {integrity: sha512-TBHyJxk2b7HceLVGFcpAUjsa5zIdsPWlR6XHfyGzd0SFu+/NFgQgMAl96MSDZgQDvJAvV6BKsFOrt6zIL09JDw==}
     dependencies:
       undici-types: 5.26.5
     dev: true
@@ -451,8 +451,8 @@ packages:
     resolution: {integrity: sha512-seS2Tj26TBVOC2NIc2rOe2y2ZO7efxITtLZcGSOnHHNOQ7CkiUBfw0Iw2ck6xkIhPwLhKNLS8BO+hEpngQlqzw==}
     dev: true
 
-  /tencentcloud-sdk-nodejs@4.0.803:
-    resolution: {integrity: sha512-4GDTkUaMym7n4kxwZt7J5/G3OhVl/ysGb729xOBwB5ZNGxs4/t5tfO5Yr+tuWcm2QHaa8uJOSvJlq+TcA+bxmg==}
+  /tencentcloud-sdk-nodejs@4.0.805:
+    resolution: {integrity: sha512-nm4VljwS2Lnu3X4n5Vm/vZe5a6rWL4lt8SroekKQYbYH3wE9EiCjtJZi+iu+gN4LVOoAfEK1FDpUO/4ayeJlFw==}
     engines: {node: '>=10'}
     dependencies:
       form-data: 3.0.1
@@ -507,8 +507,8 @@ packages:
       webidl-conversions: 3.0.1
     dev: false
 
-  /yaml@2.4.0:
-    resolution: {integrity: sha512-j9iR8g+/t0lArF4V6NE/QCfT+CO7iLqrXAHZbJdo+LfjqP1vR8Fg5bSiaq6Q2lOD1AUEVrEVIgABvBFYojJVYQ==}
+  /yaml@2.4.1:
+    resolution: {integrity: sha512-pIXzoImaqmfOrL7teGUBt/T7ZDnyeGBWyXQBvOVhLkWLN37GXv8NMLK406UY6dS51JfcQHsmcW5cJ441bHg6Lg==}
     engines: {node: '>= 14'}
     hasBin: true
     dev: false
