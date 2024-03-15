@@ -1,6 +1,6 @@
 - domain: 'yourdomain.com'
-  subDomain: '@'
-  type: 'A'
+  subDomain: '@' # 可选，默认为 @
+  type: 'A' # 可选，默认为 A
   # IP 黑名单，当获取到的公网 IP 在黑名单中时，不会更新 DNS 记录
   # 比如 ifconfig.io 通过代理访问时，获取到的公网 IP 为
   # 代理服务器的 IP，而不是真实的公网 IP，此时可以将代理服务器的 IP

@@ -8,8 +8,8 @@ import ENV from './env.js';
 
 interface Config {
   domain: string;
-  subDomain: string;
-  type: 'A';
+  subDomain?: string;
+  type?: 'A';
   // 如果检测到公网 IP 地址在 blockIPs 中，则不更新
   blockIPs?: string[];
 }
@@ -51,20 +51,22 @@ try {
       continue;
     }
 
-    const fullDomain = `${config.subDomain}.${config.domain}`;
+    const configSubDomain = config.subDomain || '@';
+    const configType = config.type || 'A';
+    const fullDomain = `${configSubDomain}.${config.domain}`;
     const recordListResponse = await client.DescribeRecordList({
       Domain: config.domain,
     });
     const recordItem = recordListResponse.RecordList?.find(
-      (item) => item.Name === config.subDomain && item.Type === config.type,
+      (item) => item.Name === configSubDomain && item.Type === configType,
     );
     const recordId = recordItem?.RecordId;
     const recordIP = recordItem?.Value;
 
     const recordConfig = {
       Domain: config.domain,
-      SubDomain: config.subDomain,
-      RecordType: config.type,
+      SubDomain: configSubDomain,
+      RecordType: configType,
       RecordLine: '默认',
       Value: publicIP,
     };
