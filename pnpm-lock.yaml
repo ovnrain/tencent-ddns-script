@@ -12,8 +12,8 @@ dependencies:
     specifier: ^16.4.5
     version: 16.4.5
   tencentcloud-sdk-nodejs:
-    specifier: ^4.0.805
-    version: 4.0.805
+    specifier: ^4.0.813
+    version: 4.0.813
   yaml:
     specifier: ^2.4.1
     version: 2.4.1
@@ -23,8 +23,8 @@ dependencies:
 
 devDependencies:
   '@types/node':
-    specifier: ^20.11.25
-    version: 20.11.25
+    specifier: ^20.11.28
+    version: 20.11.28
   prettier:
     specifier: ^3.2.5
     version: 3.2.5
@@ -32,8 +32,8 @@ devDependencies:
     specifier: ^4.7.1
     version: 4.7.1
   typescript:
-    specifier: ^5.3.3
-    version: 5.3.3
+    specifier: ^5.4.2
+    version: 5.4.2
 
 packages:
 
@@ -244,8 +244,8 @@ packages:
     dev: true
     optional: true
 
-  /@types/node@20.11.25:
-    resolution: {integrity: sha512-TBHyJxk2b7HceLVGFcpAUjsa5zIdsPWlR6XHfyGzd0SFu+/NFgQgMAl96MSDZgQDvJAvV6BKsFOrt6zIL09JDw==}
+  /@types/node@20.11.28:
+    resolution: {integrity: sha512-M/GPWVS2wLkSkNHVeLkrF2fD5Lx5UC4PxA0uZcKc6QqbIQUJyW1jVjueJYi1z8n0I5PxYrtpnPnWglE+y9A0KA==}
     dependencies:
       undici-types: 5.26.5
     dev: true
@@ -451,8 +451,8 @@ packages:
     resolution: {integrity: sha512-seS2Tj26TBVOC2NIc2rOe2y2ZO7efxITtLZcGSOnHHNOQ7CkiUBfw0Iw2ck6xkIhPwLhKNLS8BO+hEpngQlqzw==}
     dev: true
 
-  /tencentcloud-sdk-nodejs@4.0.805:
-    resolution: {integrity: sha512-nm4VljwS2Lnu3X4n5Vm/vZe5a6rWL4lt8SroekKQYbYH3wE9EiCjtJZi+iu+gN4LVOoAfEK1FDpUO/4ayeJlFw==}
+  /tencentcloud-sdk-nodejs@4.0.813:
+    resolution: {integrity: sha512-Ogig8nFoEGqUb26FGZFnqL4BsjdJZ8CCPTIYpefpw6APVMhAsD84KKecJo61Ut+GieHFcQymUuLXKRXM/XDhFA==}
     engines: {node: '>=10'}
     dependencies:
       form-data: 3.0.1
@@ -486,8 +486,8 @@ packages:
       fsevents: 2.3.3
     dev: true
 
-  /typescript@5.3.3:
-    resolution: {integrity: sha512-pXWcraxM0uxAS+tN0AG/BF2TyqmHO014Z070UsJ+pFvYuRSq8KH8DmWpnbXe0pEPDHXZV3FcAbJkijJ5oNEnWw==}
+  /typescript@5.4.2:
+    resolution: {integrity: sha512-+2/g0Fds1ERlP6JsakQQDXjZdZMM+rqpamFZJEKh4kwTIn3iDkgKtby0CeNd5ATNZ4Ry1ax15TMx0W2V+miizQ==}
     engines: {node: '>=14.17'}
     hasBin: true
     dev: true
