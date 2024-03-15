@@ -10,6 +10,8 @@ interface Config {
   domain: string;
   subDomain: string;
   type: 'A';
+  // 如果检测到公网 IP 地址在 blockIPs 中，则不更新
+  blockIPs?: string[];
 }
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -21,8 +23,6 @@ if (!fs.existsSync(configFilePath)) {
 }
 const configFile = fs.readFileSync(configFilePath, 'utf8');
 const configs: Config[] = YAML.parse(configFile);
-
-// console.log(config);
 
 const { SECRET_ID, SECRET_KEY } = ENV;
 
@@ -46,6 +46,11 @@ try {
   }
 
   for (const config of configs) {
+    if (config.blockIPs?.includes(publicIP)) {
+      console.log(`当前 IP ${publicIP} 在 IP 黑名单中，跳过`);
+      continue;
+    }
+
     const fullDomain = `${config.subDomain}.${config.domain}`;
     const recordListResponse = await client.DescribeRecordList({
       Domain: config.domain,

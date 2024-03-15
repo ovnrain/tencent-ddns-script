@@ -1,6 +1,8 @@
 - domain: 'yourdomain.com'
   subDomain: '@'
   type: 'A'
+  blockIPs:
+    - '1.1.1.1'
 - domain: 'yourdomain.com'
   subDomain: 'www'
   type: 'A'
