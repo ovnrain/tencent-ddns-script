@@ -8,15 +8,15 @@
     "start": "node -r dotenv/config dist/ddns.js"
   },
   "devDependencies": {
-    "@types/node": "^20.11.28",
+    "@types/node": "^20.11.30",
     "prettier": "^3.2.5",
     "tsx": "^4.7.1",
-    "typescript": "^5.4.2"
+    "typescript": "^5.4.3"
   },
   "dependencies": {
-    "axios": "^1.6.7",
+    "axios": "^1.6.8",
     "dotenv": "^16.4.5",
-    "tencentcloud-sdk-nodejs": "^4.0.813",
+    "tencentcloud-sdk-nodejs": "^4.0.818",
     "yaml": "^2.4.1",
     "znv": "^0.4.0"
   },
