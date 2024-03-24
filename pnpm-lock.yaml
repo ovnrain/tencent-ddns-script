@@ -12,8 +12,8 @@ dependencies:
     specifier: ^16.4.5
     version: 16.4.5
   tencentcloud-sdk-nodejs:
-    specifier: ^4.0.818
-    version: 4.0.818
+    specifier: ^4.0.819
+    version: 4.0.819
   yaml:
     specifier: ^2.4.1
     version: 2.4.1
@@ -451,8 +451,8 @@ packages:
     resolution: {integrity: sha512-seS2Tj26TBVOC2NIc2rOe2y2ZO7efxITtLZcGSOnHHNOQ7CkiUBfw0Iw2ck6xkIhPwLhKNLS8BO+hEpngQlqzw==}
     dev: true
 
-  /tencentcloud-sdk-nodejs@4.0.818:
-    resolution: {integrity: sha512-SuAlq3+YXDaT1B7mwwzZEaW66k9fux95N8nqUxw5Q9nezmkvg4ZnxmpyHFibyFjDiUDoxjeflXPPBJlgnRKEQQ==}
+  /tencentcloud-sdk-nodejs@4.0.819:
+    resolution: {integrity: sha512-F5KGvhaUt+92MAPV2QoA6gdDA/xJIv2t2jtTfsWfYhiPLNCHpPUcYkP0Zj0Rztuexg3rMvkJHLZH7tfKMyBmEQ==}
     engines: {node: '>=10'}
     dependencies:
       form-data: 3.0.1
